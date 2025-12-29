@@ -1,108 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Dounya - Dounya</title>
-  <style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio - Dounya</title>
+<style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        color: #222;
+        background: #fafafa;
     }
     header {
-      background: #0d1117;
-      color: white;
-      padding: 40px;
-      text-align: center;
+        background: #0d1117;
+        color: #fff;
+        padding: 50px 20px;
+        text-align: center;
     }
     nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
     }
     .section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+        padding: 60px 20px;
+        max-width: 900px;
+        margin: auto;
     }
     h2 {
-      color: #0d1117;
-      margin-bottom: 20px;
-      font-size: 34px;
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #0d1117;
     }
     .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
     }
     .project-card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
     }
     .project-card img {
-      width: 100%;
-      border-radius: 10px;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 15px;
     }
     footer {
-      background: #0d1117;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+        text-align: center;
+        padding: 20px;
+        background: #0d1117;
+        color: #fff;
     }
-  </style>
+</style>
 </head>
 <body>
-  <header>
-    <h1>Dounya BOUDOUNIT Portfolio Informatique</h1>
-    <p>Développeuse / Informatique — Projets, compétences, réalisations</p>
+
+<header>
+    <h1>Dounya — Développeuse Informatique</h1>
+    <p>Bienvenue sur mon portfolio professionnel</p>
     <nav>
-      <a href="#projets">Projets</a>
-      <a href="#apropos">À propos</a>
-      <a href="#contact">Contact</a>
-      <a href="index2.html">English</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Projets</a>
+        <a href="#formation">Formation</a>
+        <a href="#contact">Contact</a>
     </nav>
-  </header>
+</header>
 
-  <section class="section" id="projets">
-    <h2>Mes Projets</h2>
+<section class="section" id="services">
+    <h2>À propos / Services</h2>
+    <p>Je suis développeuse informatique spécialisée en … (ex: web, apps, systèmes, etc.).</p>
+    <ul>
+        <li>Développement web (HTML, CSS, JavaScript)</li>
+        <li>Applications backend (ex: Python, Node.js)</li>
+        <li>Projets full-stack complets</li>
+        <li>Systèmes et automatisation</li>
+    </ul>
+</section>
+
+<section class="section" id="portfolio">
+    <h2>Projets récents</h2>
     <div class="projects">
-      <div class="project-card">
-        <img src="image1.jpg" alt="Projet 1" />
-        <h3>Projet 1</h3>
-        <p>Description de ton projet : ce que tu as fait, outils utilisés, objectif.</p>
-      </div>
-      <div class="project-card">
-        <img src="image2.jpg" alt="Projet 2" />
-        <h3>Projet 2</h3>
-        <p>Description de ton projet : code, fonctionnalités, technos.</p>
-      </div>
-      <div class="project-card">
-        <img src="image3.jpg" alt="Projet 3" />
-        <h3>Projet 3</h3>
-        <p>Description du projet : application, site web, script, etc.</p>
-      </div>
+        <div class="project-card">
+            <img src="projet1.jpg" alt="Projet 1" />
+            <h3>Projet 1</h3>
+            <p>Description : ce que tu as fait, technos, objectif.</p>
+        </div>
+        <div class="project-card">
+            <img src="projet2.jpg" alt="Projet 2" />
+            <h3>Projet 2</h3>
+            <p>Description : site, app, outil, etc.</p>
+        </div>
+        <div class="project-card">
+            <img src="projet3.jpg" alt="Projet 3" />
+            <h3>Projet 3</h3>
+            <p>Description : langage, framework, challenge.</p>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section class="section" id="apropos">
-    <h2>À propos</h2>
-    <p>Écris ici une petite présentation : ton parcours, ton niveau en informatique, ce que tu veux faire plus tard, tes compétences (HTML, CSS, Python, Réseaux, etc.).</p>
-  </section>
+<section class="section" id="formation">
+    <h2>Formation & Parcours</h2>
+    <p><strong>2023–2025</strong> — Formation en informatique (ex: BTS, Licence, école X)</p>
+    <p><strong>2021–2023</strong> — Stage / projet freelance</p>
+</section>
 
-  <section class="section" id="contact">
+<section class="section" id="contact">
     <h2>Contact</h2>
-    <p>Email : tonemail@example.com</p>
-    <p>LinkedIn : lien</p>
-    <p>GitHub : lien</p>
-  </section>
+    <p>Email : <a href="mailto:tonemail@example.com">tonemail@example.com</a></p>
+    <p>GitHub : <a href="https://github.com/DounyaBdnt">github.com/DounyaBdnt</a></p>
+    <p>LinkedIn : <a href="https://linkedin.com/in/tonprofil">linkedin.com/in/tonprofil</a></p>
+</section>
 
-  <footer>
-    <p>© 2025 — Ton nom. Portfolio Informatique.</p>
-  </footer>
+<footer>
+    © 2025 — Dounya. Tous droits réservés.
+</footer>
+
 </body>
 </html>
