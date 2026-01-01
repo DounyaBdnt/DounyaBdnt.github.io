@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HOME */
+.home {
+    height: 100vh;
+    background: #1e90ff;
+    color: white;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 50px;
+}
+
+/* PROJETS */
+.projects {
+    padding: 80px 40px;
+    background: #f4f4f4;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.eye {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 24px;
+    opacity: 0;
+}
+
+.project-card:hover .eye {
+    opacity: 1;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    width: 60%;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+/* CONTACT */
+.contact {
+    padding: 80px;
+    text-align: center;
+}
