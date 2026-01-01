@@ -1,269 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Dounya BOUDOUNIT – Bussiness & Data Analyst</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Dounya BOUDOUNIT, développeur web spécialisé en sites vitrines, WordPress et applications web.">
-
-  <!-- CSS -->
-  <style>
-    :root {
-      --primary: #f05f40;
-      --dark: #212529;
-      --light: #f8f9fa;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
-      background: var(--light);
-      color: var(--dark);
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    /* ===== NAV ===== */
-    nav {
-      position: fixed;
-      width: 100%;
-      background: rgba(33, 37, 41, 0.95);
-      padding: 15px 0;
-      z-index: 1000;
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      gap: 30px;
-    }
-
-    nav a {
-      color: white;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      color: var(--primary);
-    }
-
-    /* ===== HERO ===== */
-    .hero {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background: linear-gradient(120deg, #212529, #343a40);
-      color: white;
-      padding: 20px;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    .hero h2 {
-      font-weight: 400;
-      margin-bottom: 20px;
-      color: var(--primary);
-    }
-
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto 30px;
-    }
-
-    .btn {
-      padding: 12px 25px;
-      border-radius: 30px;
-      font-weight: 600;
-      display: inline-block;
-      margin: 5px;
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      color: white;
-    }
-
-    .btn-outline {
-      border: 2px solid white;
-      color: white;
-    }
-
-    /* ===== SECTIONS ===== */
-    section {
-      padding: 80px 20px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h3 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 2rem;
-    }
-
-    /* ===== PORTFOLIO ===== */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .project {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-    }
-
-    .project h4 {
-      margin-bottom: 10px;
-      color: var(--primary);
-    }
-
-    /* ===== CONTACT ===== */
-    form {
-      max-width: 500px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    input, textarea {
-      padding: 12px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-
-    button {
-      background: var(--primary);
-      color: white;
-      border: none;
-      padding: 12px;
-      font-size: 1rem;
-      border-radius: 30px;
-      cursor: pointer;
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      background: var(--dark);
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Portfolio - Ton Prénom</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <ul>
-      <li><a href="#home">Accueil</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">TonPrénom</div>
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div>
-      <h1>Dounya BOUDOUNIT</h1>
-      <h2>Développeur Web</h2>
-      <p>
-        Développeur web spécialisé en sites vitrines, WordPress et applications web.
-        Passionné par la création d’expériences simples, efficaces et modernes.
-      </p>
-      <a href="#portfolio" class="btn btn-primary">Voir mes projets</a>
-      <a href="#contact" class="btn btn-outline">Me contacter</a>
-    </div>
-  </section>
+<!-- ACCUEIL -->
+<section id="home" class="home">
+    <h1>Ton Prénom</h1>
+    <h2>Développeur Web</h2>
+    <p>
+        Passionné par le développement web, je crée des projets modernes,
+        interactifs et performants.
+    </p>
+</section>
 
-  <!-- PORTFOLIO -->
-  <section id="portfolio">
-    <div class="container">
-      <h3>Portfolio</h3>
-      <div class="projects">
-        <div class="project">
-          <h4>Auris Audition</h4>
-          <p>Site vitrine – WordPress</p>
-          <a href="https://www.aurisaudition.ch/" target="_blank">Voir le site</a>
+<!-- PROJETS -->
+<section id="projects" class="projects">
+    <h2>Mes Projets</h2>
+
+    <div class="project-grid">
+        <!-- Projet 1 -->
+        <div class="project-card" onclick="openModal(1)">
+            <h3>Projet 1</h3>
+            <p>Description courte</p>
+            <span class="eye">👁</span>
         </div>
 
-
-        <div class="project">
-          <h4>Meier Serrurerie</h4>
-          <p>Site vitrine – WordPress</p>
-          <a href="https://meier-serrurerie.ch/" target="_blank">Voir le site</a>
+        <div class="project-card" onclick="openModal(2)">
+            <h3>Projet 2</h3>
+            <p>Description courte</p>
+            <span class="eye">👁</span>
         </div>
 
-        <div class="project">
-          <h4>Serrurier Moreau</h4>
-          <p>Site vitrine – WordPress</p>
-          <a href="https://serrurier-moreau.fr/" target="_blank">Voir le site</a>
+        <div class="project-card" onclick="openModal(3)">
+            <h3>Projet 3</h3>
+            <p>Description courte</p>
+            <span class="eye">👁</span>
         </div>
-      </div>
+
+        <div class="project-card" onclick="openModal(4)">
+            <h3>Projet 4</h3>
+            <p>Description courte</p>
+            <span class="eye">👁</span>
+        </div>
+
+        <div class="project-card" onclick="openModal(5)">
+            <h3>Projet 5</h3>
+            <p>Description courte</p>
+            <span class="eye">👁</span>
+        </div>
+
+        <div class="project-card" onclick="openModal(6)">
+            <h3>Projet 6</h3>
+            <p>Description courte</p>
+            <span class="eye">👁</span>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <h3>Contact</h3>
-      <form>
-        <input type="text" placeholder="Nom et prénom">
-        <input type="email" placeholder="Email">
-        <textarea rows="5" placeholder="Votre message"></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
+<!-- MODAL PROJET -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">✖</span>
+        <img id="modal-img" src="" alt="">
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <button onclick="closeModal()">Retour</button>
     </div>
-  </section>
+</div>
 
-  <!-- FOOTER -->
-   <footer class="footer text-center">
-            <div class="container px-4 px-lg-5">
-                <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
-                    </li>
-                </ul>
-                <p class="text-muted small mb-0">Copyright &copy; Your Website 2023</p>
-            </div>
-        </footer>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Me contacter</h2>
+    <p>Email : tonemail@email.com</p>
+</section>
 
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
